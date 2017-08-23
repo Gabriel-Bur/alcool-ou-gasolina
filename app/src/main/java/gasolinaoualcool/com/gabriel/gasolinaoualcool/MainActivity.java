@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         botaoVerificar.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             Double valorAlcool = Double.parseDouble(precoAlcool.getText().toString());
             Double valorGasolina = Double.parseDouble(precoGasolina.getText().toString());
 
-            Double resultadoCalculo = valorAlcool/ valorGasolina;
+            Double resultadoCalculo = valorAlcool/valorGasolina;
 
                 if (resultadoCalculo>=0.7){
                     ResultadoTexto.setText("É melhor utilizar Gasolina");
